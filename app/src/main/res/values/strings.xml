@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ReBuyTest</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="tx_register">注册</string>
+    <string name="tx_login">登录</string>
+    <string name="tx_inputpassword">请输入密码</string>
+    <string name="tx_inputusername">请输入用户名</string>
+    <string name="tx_account">账号:</string>
+    <string name="tx_password">密码:</string>
+    <string name="tx_register_confirm_password">请确认密码</string>
+    <string name="tx_mainpage">首页</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_auction">拍卖</string>
+    <string name="tv_message">信息</string>
+    <string name="tv_mine">我的</string>
+</resources>
