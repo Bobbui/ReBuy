@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 
 import com.example.rebuytest.R;
 import com.example.rebuytest.activity.EasyGoActivity;
+import com.example.rebuytest.activity.LikeActivity;
 import com.example.rebuytest.activity.SaleActivity;
 import com.example.rebuytest.utils.ThreadUtils;
 import com.example.rebuytest.utils.ToastUtils;
@@ -52,6 +53,7 @@ public class HomeFragment extends Fragment {
         initData();
         initView();
         initLinearlayoutView();
+        initListener();
         return view;
     }
 
@@ -119,6 +121,52 @@ public class HomeFragment extends Fragment {
             }
         });
 
+    }
+
+
+    /**
+     * 设置图片的点击事件
+     */
+    private void initListener() {
+        mLLLike1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), LikeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mLLLike2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), LikeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mLLLike3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), LikeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mLLLike4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), LikeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mLLLike5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), LikeActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }
