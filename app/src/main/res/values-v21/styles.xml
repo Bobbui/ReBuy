@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="cb_style">
+        <!--波纹的颜色-->
+        <item name="android:colorControlHighlight">#F9C71E</item>
+        <!--选中的颜色-->
+        <item name="colorAccent">#F9C71E</item>
+    </style>
+</resources>

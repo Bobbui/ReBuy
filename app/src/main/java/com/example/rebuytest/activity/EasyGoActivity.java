@@ -37,7 +37,7 @@ public class EasyGoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_easy_go);
         tabViewPager = findViewById(R.id.easygo_viewpager);
         tabLayout = findViewById(R.id.easygo_tablayout);
-        mBtnReturn = findViewById(R.id.btn_return);
+        mBtnReturn = findViewById(R.id.btn_esay_go_return);
         Log.i("!!!", String.valueOf(tabLayout.getTabCount()));
         init();
         initListener();
