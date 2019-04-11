@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.example.rebuytest.R;
-import com.example.rebuytest.adapter.ListViewAdapter;
+import com.example.rebuytest.adapter.AuctionListViewAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +33,7 @@ public class AuctionFragment extends Fragment {
         listView = (ListView) view.findViewById(R.id.auction_listview);
         List<Integer> list1 = getData1();
         List<Integer> list2 = getData2();
-        listView.setAdapter(new ListViewAdapter(getActivity(),list1,list2));
+        listView.setAdapter(new AuctionListViewAdapter(getActivity(),list1,list2));
         return view;
     }
 

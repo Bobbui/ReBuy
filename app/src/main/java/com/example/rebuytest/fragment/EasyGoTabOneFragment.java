@@ -6,13 +6,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 
 import com.example.rebuytest.R;
-import com.example.rebuytest.adapter.ListViewAdapter;
 
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class EasyGoTabOneFragment extends Fragment {

@@ -25,10 +25,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="15dp"
-            android:background="#F9C71E"
+            android:background="#F9C71`E"
             android:text="商品详情"
             android:textColor="#fff"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout

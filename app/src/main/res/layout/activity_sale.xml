@@ -28,7 +28,7 @@
             android:background="#F9C71E"
             android:text="发布信息"
             android:textColor="#fff"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
     </LinearLayout>
 
     <ScrollView
