@@ -1,4 +1,4 @@
-package com.example.rebuytest.widget;
+package com.example.rebuytest.utils;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -15,7 +15,7 @@ import android.util.AttributeSet;
  * 自定义圆形图片
  */
 
-public class CircleImage extends android.support.v7.widget.AppCompatImageView {
+public class CircleImageUtil extends android.support.v7.widget.AppCompatImageView {
 
     private Paint mPaint; //画笔
 
@@ -23,15 +23,15 @@ public class CircleImage extends android.support.v7.widget.AppCompatImageView {
 
     private float mScale; //图片的缩放比例
 
-    public CircleImage(Context context) {
+    public CircleImageUtil(Context context) {
         super(context);
     }
 
-    public CircleImage(Context context, AttributeSet attrs) {
+    public CircleImageUtil(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public CircleImage(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CircleImageUtil(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 

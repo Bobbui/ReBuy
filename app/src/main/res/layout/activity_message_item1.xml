@@ -6,27 +6,15 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="#F9C71E">
+        style="@style/style_layout">
 
         <ImageButton
-            android:id="@+id/btn_sale_return"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/ic_return" />
+            style="@style/title_bar_button"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="15dp"
-            android:background="#F9C71E"
+            style="@style/title_bar_textview"
             android:text="消息详情"
-            android:textColor="#fff"
-            android:textSize="20sp" />
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -140,7 +128,7 @@
                 android:layout_height="55dp"
                 android:layout_centerInParent="true">
 
-                <com.example.rebuytest.widget.CircleImage
+                <com.example.rebuytest.utils.CircleImageUtil
                     android:id="@+id/message_image"
                     android:layout_width="55dp"
                     android:layout_height="55dp"

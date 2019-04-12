@@ -34,8 +34,8 @@ public class MessageListViewAdapter extends BaseAdapter {
      * @return
      */
 
-    public final class Component {
-        public ImageView mImage;
+    private final class Component {
+        private ImageView mImage;
         private TextView mtvName;
         private TextView mtvstatus;
     }
@@ -47,7 +47,7 @@ public class MessageListViewAdapter extends BaseAdapter {
     /**
      * 获得某一位置的数据
      * @param position
-     * @return
+     * @return pic
      */
     @Override
     public Object getItem(int position) {

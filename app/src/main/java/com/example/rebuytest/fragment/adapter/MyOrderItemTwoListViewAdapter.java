@@ -1,4 +1,4 @@
-package com.example.rebuytest.adapter;
+package com.example.rebuytest.fragment.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,43 +11,37 @@ import com.example.rebuytest.R;
 
 import java.util.List;
 
-public class AuctionListViewAdapter extends BaseAdapter {
+public class MyOrderItemTwoListViewAdapter extends BaseAdapter {
 
-    private List<Integer> data1;
-    private List<Integer> data2;
+    private List<Integer> data;
     private LayoutInflater layoutInflater;
     private Context context;
 
-    public AuctionListViewAdapter(Context context, List<Integer> data1, List<Integer> data2) {
+    public MyOrderItemTwoListViewAdapter(Context context, List<Integer> data) {
         this.context = context;
-        this.data1 = data1;
-        this.data2 = data2;
+        this.data = data;
         this.layoutInflater = LayoutInflater.from(context);
     }
 
+
     /**
-     * 组件集合，对应auction_list里的控件
+     * 组件集合
      * @return
      */
 
     public final class Component {
         public TextView mtvMoney;
-        public TextView mtvPeopleAttend;
     }
+
 
     @Override
     public int getCount() {
-        return data1.size();
+        return data.size();
     }
 
-    /**
-     * 获得某一位置的数据
-     * @param position
-     * @return
-     */
     @Override
     public Object getItem(int position) {
-        return data1.get(position);
+        return data.get(position);
     }
 
     @Override
@@ -60,19 +54,15 @@ public class AuctionListViewAdapter extends BaseAdapter {
         Component component = null;
         if (convertView == null) {
             component = new Component();
-
-            //获得组件，实例化组件
-            convertView = layoutInflater.inflate(R.layout.auction_list,null);
-            component.mtvMoney = convertView.findViewById(R.id.tv_momey);
-            component.mtvPeopleAttend = convertView.findViewById(R.id.tv_people_attend);
+            convertView = layoutInflater.inflate(R.layout.myorderitem2_list,null);
+            component.mtvMoney = convertView.findViewById(R.id.tv_money);
             convertView.setTag(component);
         } else {
-            component = (Component) convertView.getTag();
+            component =(Component) convertView.getTag();
         }
 
         //绑定数据
-        component.mtvMoney.setText(String.valueOf(data1.get(position)));
-        component.mtvPeopleAttend.setText(String.valueOf(data2.get(position)));
+        component.mtvMoney.setText(String.valueOf(data.get(position)));
         return convertView;
     }
 }

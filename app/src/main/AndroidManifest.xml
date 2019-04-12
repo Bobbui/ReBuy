@@ -16,7 +16,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".fragment.activity.Item1Activity"></activity>
+        <activity android:name=".fragment.activity.MineMyOrderActivity"></activity>
+        <activity android:name=".fragment.activity.MineInstallActivity" />
+        <activity android:name=".fragment.activity.MineMyCollectionActivity" />
+        <activity android:name=".fragment.activity.MineMyShopActivity" />
+        <activity android:name=".fragment.activity.MineMyInfoActivity" />
+        <activity android:name=".fragment.activity.MessageItem1Activity" />
         <activity android:name=".activity.LikeActivity" />
         <activity android:name=".activity.SaleActivity" />
         <activity android:name=".activity.EasyGoActivity" />

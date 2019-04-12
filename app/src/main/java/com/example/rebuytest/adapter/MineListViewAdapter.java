@@ -5,49 +5,51 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.rebuytest.R;
 
 import java.util.List;
 
-public class AuctionListViewAdapter extends BaseAdapter {
-
-    private List<Integer> data1;
-    private List<Integer> data2;
+public class MineListViewAdapter extends BaseAdapter {
+    private int[] pic = null;
+    private List<String> data1 = null;
     private LayoutInflater layoutInflater;
     private Context context;
 
-    public AuctionListViewAdapter(Context context, List<Integer> data1, List<Integer> data2) {
+    public MineListViewAdapter(Context context, int[] pic, List<String> data1) {
         this.context = context;
+        this.pic = pic;
         this.data1 = data1;
-        this.data2 = data2;
         this.layoutInflater = LayoutInflater.from(context);
     }
 
     /**
      * 组件集合，对应auction_list里的控件
+     *
      * @return
      */
 
-    public final class Component {
-        public TextView mtvMoney;
-        public TextView mtvPeopleAttend;
+    private final class Component {
+        private ImageView mImgMine;
+        private TextView mtvMine;
     }
 
     @Override
     public int getCount() {
-        return data1.size();
+        return pic.length;
     }
 
     /**
      * 获得某一位置的数据
+     *
      * @param position
      * @return
      */
     @Override
     public Object getItem(int position) {
-        return data1.get(position);
+        return pic[position];
     }
 
     @Override
@@ -62,17 +64,17 @@ public class AuctionListViewAdapter extends BaseAdapter {
             component = new Component();
 
             //获得组件，实例化组件
-            convertView = layoutInflater.inflate(R.layout.auction_list,null);
-            component.mtvMoney = convertView.findViewById(R.id.tv_momey);
-            component.mtvPeopleAttend = convertView.findViewById(R.id.tv_people_attend);
+            convertView = layoutInflater.inflate(R.layout.mine_list, null);
+            component.mImgMine = convertView.findViewById(R.id.img_mine);
+            component.mtvMine = convertView.findViewById(R.id.tv_mine);
             convertView.setTag(component);
         } else {
             component = (Component) convertView.getTag();
         }
 
         //绑定数据
-        component.mtvMoney.setText(String.valueOf(data1.get(position)));
-        component.mtvPeopleAttend.setText(String.valueOf(data2.get(position)));
+        component.mImgMine.setImageResource(pic[position]);
+        component.mtvMine.setText(data1.get(position));
         return convertView;
     }
 }

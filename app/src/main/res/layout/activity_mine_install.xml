@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    tools:context="com.example.rebuytest.fragment.activity.MineInstallActivity">
+
+    <LinearLayout style="@style/style_layout">
+
+        <ImageButton style="@style/title_bar_button" />
+
+        <TextView
+            style="@style/title_bar_textview"
+            android:text="设置" />
+    </LinearLayout>
+
+
+    <!--图片质量-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/textview_border"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:text="图片质量"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFF"
+            android:src="@drawable/ic_to" />
+    </LinearLayout>
+
+    <!--清除缓存-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/textview_border"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:text="清除缓存"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="敬请期待" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <!--关于我们-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/textview_border"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:text="关于我们"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFF"
+            android:src="@drawable/ic_to" />
+    </LinearLayout>
+
+    <!--问题反馈-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/textview_border"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:text="问题反馈"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFF"
+            android:src="@drawable/ic_to" />
+    </LinearLayout>
+
+    <!--分享给朋友-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/textview_border"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:text="分享给朋友"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFF"
+            android:src="@drawable/ic_to" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FF0000"
+        android:text="退出登录"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+</LinearLayout>

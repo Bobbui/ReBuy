@@ -12,7 +12,7 @@ import android.widget.ListView;
 
 import com.example.rebuytest.R;
 import com.example.rebuytest.adapter.MessageListViewAdapter;
-import com.example.rebuytest.fragment.activity.Item1Activity;
+import com.example.rebuytest.fragment.activity.MessageItem1Activity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -69,13 +69,13 @@ public class MessageFragment extends Fragment {
                 Intent intent = null;
                 switch (position) {
                     case 0:
-                        intent = new Intent(getContext(),Item1Activity.class);
+                        intent = new Intent(getContext(), MessageItem1Activity.class);
                         break;
                     case 1:
-                        intent = new Intent(getContext(),Item1Activity.class);
+                        intent = new Intent(getContext(), MessageItem1Activity.class);
                         break;
                     case 2:
-                        intent = new Intent(getContext(),Item1Activity.class);
+                        intent = new Intent(getContext(), MessageItem1Activity.class);
                 }
                 startActivity(intent);
             }
