@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.rebuytest.activity.SaleActivity">
+    tools:context="com.example.rebuytest.business.home.busniess.activity.SaleActivity">
 
     <LinearLayout
         style="@style/style_layout">
@@ -60,7 +60,7 @@
                     android:text="电话"
                     android:layout_gravity="center"
                     android:textSize="18sp"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginLeft="8dp"
                     android:textColor="#F9C71E"/>
                 <EditText
                     android:layout_width="match_parent"
@@ -83,7 +83,7 @@
                     android:layout_gravity="center"
                     android:textSize="18sp"
                     android:textColor="#F9C71E"
-                    android:layout_marginLeft="5dp"/>
+                    android:layout_marginLeft="8dp"/>
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -105,7 +105,7 @@
                     android:layout_gravity="center"
                     android:textSize="18sp"
                     android:textColor="#F9C71E"
-                    android:layout_marginLeft="5dp"/>
+                    android:layout_marginLeft="8dp"/>
 
             </LinearLayout>
 
@@ -123,40 +123,35 @@
                     android:layout_gravity="center"
                     android:textSize="18sp"
                     android:textColor="#F9C71E"
-                    android:layout_marginLeft="5dp"/>
+                    android:layout_marginLeft="8dp"/>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginLeft="10dp">
-
-                    <CheckBox
-                        android:id="@+id/cb_sale"
+                    <RadioGroup
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="卖东西"
-                        android:layout_weight="1"
-                        android:layout_gravity="center"
+                        android:orientation="horizontal"
                         app:theme="@style/cb_style"
-                        />
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp">
 
-                    <CheckBox
-                        android:id="@+id/cb_exchange"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="换东西"
-                        android:layout_weight="1"
-                        app:theme="@style/cb_style"/>
+                        <RadioButton
+                            android:id="@+id/cb_sale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="卖东西"
+                            />
 
-                    <CheckBox
-                        android:id="@+id/cb_auction"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="拍卖"
-                        android:layout_weight="1"
-                        app:theme="@style/cb_style"/>
-                </LinearLayout>
+                        <RadioButton
+                            android:id="@+id/cb_exchange"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="换东西" />
+
+                        <RadioButton
+                            android:id="@+id/cb_auction"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="拍卖" />
+                    </RadioGroup>
             </LinearLayout>
 
 
@@ -173,7 +168,7 @@
                     android:layout_gravity="center"
                     android:textSize="18sp"
                     android:textColor="#F9C71E"
-                    android:layout_marginLeft="5dp"/>
+                    android:layout_marginLeft="8dp"/>
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -196,7 +191,7 @@
                     android:gravity="center_vertical"
                     android:textSize="18sp"
                     android:textColor="#F9C71E"
-                    android:layout_marginLeft="5dp"/>
+                    android:layout_marginLeft="8dp"/>
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -219,13 +214,15 @@
                     android:layout_gravity="center"
                     android:textSize="18sp"
                     android:textColor="#F9C71E"
-                    android:layout_marginLeft="5dp"/>
+                    android:layout_marginLeft="8dp"/>
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:hint="点击输入"
                     android:textSize="16sp"
-                    android:layout_marginLeft="10dp"/>
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:ems="12"/>
             </LinearLayout>
 
             <!--拍卖-->
@@ -242,7 +239,7 @@
                     android:layout_gravity="center"
                     android:textSize="18sp"
                     android:textColor="#F9C71E"
-                    android:layout_marginLeft="5dp"/>
+                    android:layout_marginLeft="8dp"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -257,16 +254,20 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="起价"
-                            android:textSize="18sp"
+                            android:textSize="16sp"
                             android:layout_gravity="center"
                             android:gravity="center"/>
                         <EditText
                             android:layout_width="0dp"
                             android:layout_height="40dp"
                             android:hint="起价"
-                            android:textSize="16sp"
+                            android:textSize="15sp"
                             android:layout_marginLeft="10dp"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:maxEms="6"
+                            android:focusableInTouchMode="true"
+                            android:numeric="integer"/>
                     </LinearLayout>
 
 
@@ -278,16 +279,19 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="加价"
-                            android:textSize="18sp"
+                            android:textSize="16sp"
                             android:layout_gravity="center"
                             android:gravity="center"/>
                         <EditText
                             android:layout_width="0dp"
                             android:layout_height="40dp"
                             android:hint="加价"
-                            android:textSize="16sp"
+                            android:textSize="15sp"
                             android:layout_marginLeft="10dp"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:maxEms="6"
+                            android:numeric="integer"/>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -306,7 +310,7 @@
                     android:layout_gravity="center"
                     android:textSize="18sp"
                     android:textColor="#F9C71E"
-                    android:layout_marginLeft="5dp"/>
+                    android:layout_marginLeft="8dp"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="40dp"

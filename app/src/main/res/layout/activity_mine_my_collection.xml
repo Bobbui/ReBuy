@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.rebuytest.fragment.activity.MineMyCollectionActivity">
+    tools:context="com.example.rebuytest.business.mine.business.mycollection.activity.MineMyCollectionActivity">
 
     <LinearLayout
         style="@style/style_layout">

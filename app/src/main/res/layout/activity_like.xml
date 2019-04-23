@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.rebuytest.activity.LikeActivity">
+    tools:context="com.example.rebuytest.business.home.busniess.activity.LikeActivity">
 
     <LinearLayout
         style="@style/style_layout">
@@ -19,18 +19,262 @@
             />
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="vertical"
         android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="410dp"
-            android:layout_height="710dp"
-            android:src="@drawable/bg_like" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/bg_mylove"
+                android:scaleType="fitXY"/>
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#FFF">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="5"
+                    android:maxEms="17"
+                    android:lines="2"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:text="这是一个买衣服的标题类的东西我希望它一行是十七个字，两行"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#DCDCDC"/>
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/heart_card_normal"
+                    android:background="#FFF"
+                    android:scaleType="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="一口价"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="￥1000000"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#FF0000"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="竞拍价"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="￥1000000"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#FF0000"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="每次加价￥2元"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="#F5F5F5"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="10dp">
+
+                            <com.example.rebuytest.utils.CircleImageUtil
+                                android:id="@+id/message_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/bg_banner1"
+                                android:layout_gravity="center"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="巴拉巴拉巴拉"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="13级  计算机科学与技术"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="10dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="Tel:11233456  QQ:754449629"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="18dp"
+                            android:background="#808080"
+                            android:text="25分钟前"
+                            android:textColor="#FFF"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginTop="15dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxEms="23"
+                    android:text="这是那个东西的介绍文案，就是要介绍很多很多很多一行差不多有二十三个字，行数不限，对，就是不限"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#000"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_exchange"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="1.《哈哈哈哈哈哈哈》"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="2.《啊呀呀呀啊呀呀呀》"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="3.《AD手动大赛第十大苏打大赛上的大赛得分》"
+                            android:gravity="center_vertical"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,6 +294,7 @@
             android:background="#FFF"/>
 
         <Button
+            android:id="@+id/btn_contact_saler"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"

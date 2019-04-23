@@ -37,7 +37,7 @@ public class ToolBarUtil {
                 @Override
                 public void onClick(View v) {
                     //3.需要传值的地方用接口对象调用接口方法
-                    mOnToolBarClickListener.OnToolBarCLick(finalI);
+                    mOnToolBarClickListener.OnToolBarClick(finalI);
                 }
             });
         }
@@ -55,7 +55,7 @@ public class ToolBarUtil {
      * 接口回调
      */
     public interface OnToolBarClickListener {
-        void OnToolBarCLick(int position);
+        void OnToolBarClick(int position);
     }
 
     private OnToolBarClickListener mOnToolBarClickListener;

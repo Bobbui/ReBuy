@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#F5F5F5"
     android:orientation="vertical"
-    tools:context="com.example.rebuytest.fragment.activity.MineMyInfoActivity">
+    tools:context="com.example.rebuytest.business.mine.business.myinfo.activity.MineMyInfoActivity">
 
     <LinearLayout
         style="@style/style_layout">
@@ -39,7 +39,7 @@
                 android:layout_marginLeft="5dp"
                 android:text="昵称"
                 android:textColor="#F9C71E"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -62,7 +62,7 @@
                 android:layout_marginLeft="5dp"
                 android:text="QQ号"
                 android:textColor="#F9C71E"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -86,7 +86,7 @@
                 android:layout_marginLeft="5dp"
                 android:text="分类"
                 android:textColor="#F9C71E"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -110,7 +110,7 @@
                 android:layout_marginLeft="5dp"
                 android:text="个性签名"
                 android:textColor="#F9C71E"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -135,7 +135,7 @@
                 android:layout_marginLeft="5dp"
                 android:text="头像"
                 android:textColor="#F9C71E"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
             <com.example.rebuytest.utils.CircleImageUtil
                 android:id="@+id/message_image"

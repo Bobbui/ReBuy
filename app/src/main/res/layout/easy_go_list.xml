@@ -2,14 +2,15 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
+    android:layout_height="120dp"
     android:orientation="horizontal"
     android:id="@+id/easy_go_list">
 
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/bg_home_like"
+        android:scaleType="fitXY"
         />
 
     <LinearLayout
@@ -19,13 +20,15 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="48dp">
+            android:layout_height="40dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="T恤"
-                android:textColor="#000" />
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -75,7 +78,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="10dp"
                 android:src="@drawable/ic_eye"
                 />
 
@@ -83,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/image"
                 android:text="995"
                 android:textSize="12sp" />
@@ -91,10 +94,9 @@
             <ImageButton
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginLeft="200dp"
-                android:background="#FFF"
-                android:scaleType="fitXY"
+                android:background="@null"
                 android:src="@drawable/heart_card_normal" />
         </RelativeLayout>
     </LinearLayout>
